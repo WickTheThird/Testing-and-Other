@@ -1,0 +1,178 @@
+.PAGE {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    height: 100vh;
+    width: 100%;
+}
+
+/* This is for the Login page (i will add in the future a txt file from which it reads) */
+
+.login_box {
+    scale: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 5vh;
+    background-color: white;
+    height: 60vh;
+    width: 60vh;
+    border-radius: 10px;
+    animation-name: login_box;
+    animation-duration: 1.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes login_box {
+    0% {scale: 0;}
+
+    100% {scale: 1;}
+
+}
+
+.submit {
+    opacity: 0;
+    height: 7vh;
+    border: none;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+    cursor: pointer;
+    border-radius: 5px;
+    animation-name: submit;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+@keyframes submit {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.submit:hover {
+    opacity: 0.85;
+    transition: .5s;
+}
+
+.exception1 {
+    opacity: 0;
+    padding-top: 6vh;
+    animation-name:  exc2;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+.exception2 {
+    opacity: 0;
+    padding-top: 20vh;
+    animation-name:  exc2;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+@keyframes exc2 {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.exception3 {
+    opacity: 0;
+    padding-top: 5vh;
+    animation-name:  exc3;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+@keyframes exc3 {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.exception4 {
+    opacity: 0;
+    margin-top: 53vh;
+    cursor: pointer;
+    z-index: 1;
+    animation-name:  exc4;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+@keyframes exc4 {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.exception5 {
+    display: none;
+}
+
+.transition_exception {
+    opacity: 0;
+    animation-name:  exc4;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+/* This is the SignUp part of the website */
+
+.signup_box {
+    display: flex;
+    justify-content: center;
+    padding-top: 5vh;
+    background-color: white;
+    height: 60vh;
+    width: 60vh;
+    border-radius: 10px;
+    animation-name:  signup_box;
+    animation-duration: 1.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes signup_box {
+    0%{height: 60vh;}
+    50%{height: 0vh;}
+    100%{height: 60vh;}
+}
+
+/* This is the styling for the password or username errors...*/
+
+.error_box {
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    font-size:1.1vh;
+    opacity: 1;
+    color: red;
+    animation-name:  exc2;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.error_box_hidden {
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    font-size:1.1vh;
+    opacity: 1;
+    display: none;
+}
+
+

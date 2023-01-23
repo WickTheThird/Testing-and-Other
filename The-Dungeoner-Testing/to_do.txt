@@ -1,0 +1,8 @@
+
+We have the followint things to do:
+
+    1. Fix the close mouse down issue with the game --? the pickup of items must be down with pressing on them;
+    2. Make it such as the items can be taken and placed in whatever order the player wants;
+    3. Make sure that the way the items are organised in the text files is accessible and flexible;
+    4. Add more items and add functionality each one of them;
+    5. Redesign or add more maps (story is not the purpose of this game);
